@@ -9,7 +9,7 @@ import {ShareModule} from "./share/share.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,6 +19,9 @@ import {ShareModule} from "./share/share.module";
     ShareModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [
+
+  ]
 })
 export class AppModule { }
