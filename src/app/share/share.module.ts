@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CommentsComponent } from './components/comments/comments.component';
 import {MaterialModule} from "./material.module";
+import {MatLineModule} from "@angular/material/core";
+import {ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -10,11 +12,14 @@ import {MaterialModule} from "./material.module";
     CommentsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule,
+    ReactiveFormsModule
   ],
   exports:[
     CommentsComponent,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ]
 })
 export class ShareModule { }
